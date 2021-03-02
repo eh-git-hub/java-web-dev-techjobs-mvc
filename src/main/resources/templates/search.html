@@ -43,7 +43,7 @@
 
 
 <table class="job-listing table-striped table-hover">
-    <thead>
+    <thead th:if="${searchResults}">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -62,29 +62,6 @@
         <td th:text="${jobResults.coreCompetency}">Core Competency</td>
     </tr>
 </table>
-
-
-<!--<table class="job-listing table-striped table-hover">-->
-<!--    <thead>-->
-<!--    <tr>-->
-<!--        <th>ID</th>-->
-<!--        <th>Name</th>-->
-<!--        <th>Employer</th>-->
-<!--        <th>Location</th>-->
-<!--        <th>Position Type</th>-->
-<!--        <th>Skill</th>-->
-<!--    </tr>-->
-<!--    </thead>-->
-<!--    <tr th:each="jobSelected : ${jobs}">-->
-<!--        <td th:text="${jobSelected.id}">ID</td>-->
-<!--        <td th:text="${jobSelected.name}">Name</td>-->
-<!--        <td th:text="${jobSelected.employer}">Employer</td>-->
-<!--        <td th:text="${jobSelected.location}">Location</td>-->
-<!--        <td th:text="${jobSelected.positionType}">Position Type</td>-->
-<!--        <td th:text="${jobSelected.coreCompetency}">Skill</td>-->
-<!--    </tr>-->
-<!--</table>-->
-
 
 </body>
 </html>
