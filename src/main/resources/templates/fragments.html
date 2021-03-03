@@ -32,7 +32,7 @@
 
 <div th:fragment="search-html">
     <table class="job-listing table-striped table-hover">
-        <thead>
+        <thead th:if="${searchResults}">
         <tr>
             <th>ID</th>
             <th>Name</th>

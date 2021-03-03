@@ -39,29 +39,7 @@
 
 <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
-<!--<div th:replace="fragments :: search-html"></div>-->
-
-
-<table class="job-listing table-striped table-hover">
-    <thead th:if="${searchResults}">
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Employer</th>
-            <th>Location</th>
-            <th>Position Type</th>
-            <th>Skill</th>
-        </tr>
-        </thead>
-    <tr th:each="jobResults : ${searchResults}">
-        <td th:text="${jobResults.id}">ID</td>
-        <td th:text="${jobResults.name}">Name</td>
-        <td th:text="${jobResults.employer}">Employer</td>
-        <td th:text="${jobResults.location}">Location</td>
-        <td th:text="${jobResults.positionType}">Position Type</td>
-        <td th:text="${jobResults.coreCompetency}">Core Competency</td>
-    </tr>
-</table>
+<div th:replace="fragments :: search-html"></div>
 
 </body>
 </html>
